@@ -1,12 +1,16 @@
 package com.kodilla.testing;
 
 import com.kodilla.testing.calculator.Calculator;
+import com.kodilla.testing.collection.OddNumbersExterminator;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestingMain {
     public static void main(String[] args) {
         System.out.println("Moduł 6. Wprowadzenie do testowania oprogramowania");
 
-        System.out.println("Klasa Calculator - test jednostkowy");
+        /*System.out.println("Klasa Calculator - test jednostkowy");
 
         Calculator testCalculator = new Calculator();
 
@@ -25,6 +29,24 @@ public class TestingMain {
         }
         else {
             System.out.println("Subtract method with parameters " + a + " and " + b + "returned wrong value - TEST FAILED" );
-        }
+        }*/
+
+        OddNumbersExterminator test = new OddNumbersExterminator();
+
+        List<Integer> input = new ArrayList<Integer>();
+
+        List<Integer> output = new ArrayList<Integer>();
+
+        input.add(12);
+        input.add(2);
+
+        output.add(12);
+        output.add(122);
+
+        System.out.println(input.equals(output));
+
+
+
+
     }
 }
