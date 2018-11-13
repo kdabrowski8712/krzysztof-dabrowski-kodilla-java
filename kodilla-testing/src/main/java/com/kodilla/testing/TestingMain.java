@@ -2,6 +2,9 @@ package com.kodilla.testing;
 
 import com.kodilla.testing.calculator.Calculator;
 import com.kodilla.testing.collection.OddNumbersExterminator;
+import com.kodilla.testing.shape.Circle;
+import com.kodilla.testing.shape.ShapeCollector;
+import com.kodilla.testing.shape.Square;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,8 +48,12 @@ public class TestingMain {
 
         System.out.println(input.equals(output));
 
-
-
+        ShapeCollector testCollector = new ShapeCollector();
+        Circle testCircle = new Circle(12.0);
+        Square testSquare = new Square(10.0);
+        testCollector.addFigure(testCircle);
+        testCollector.addFigure(testSquare);
+        testCollector.showFigures();
 
     }
 }
