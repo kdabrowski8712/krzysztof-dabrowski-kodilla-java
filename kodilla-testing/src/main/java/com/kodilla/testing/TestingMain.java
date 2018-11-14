@@ -5,9 +5,10 @@ import com.kodilla.testing.collection.OddNumbersExterminator;
 import com.kodilla.testing.shape.Circle;
 import com.kodilla.testing.shape.ShapeCollector;
 import com.kodilla.testing.shape.Square;
-
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 public class TestingMain {
     public static void main(String[] args) {
