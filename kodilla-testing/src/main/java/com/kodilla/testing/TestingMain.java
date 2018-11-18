@@ -2,6 +2,7 @@ package com.kodilla.testing;
 
 import com.kodilla.testing.calculator.Calculator;
 import com.kodilla.testing.collection.OddNumbersExterminator;
+import com.kodilla.testing.library.LibraryUser;
 import com.kodilla.testing.shape.Circle;
 import com.kodilla.testing.shape.ShapeCollector;
 import com.kodilla.testing.shape.Square;
@@ -55,6 +56,8 @@ public class TestingMain {
         testCollector.addFigure(testCircle);
         testCollector.addFigure(testSquare);
         testCollector.showFigures();
+
+        //LibraryUser u = new LibraryUser();
 
     }
 }
