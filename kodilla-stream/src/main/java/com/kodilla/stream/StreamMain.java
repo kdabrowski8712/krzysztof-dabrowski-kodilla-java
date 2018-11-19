@@ -12,7 +12,7 @@ public class StreamMain {
     public static void main(String[] args) {
         System.out.println("Welcome to module 7 - Stream");
 
-        Processor processor = new Processor();
+       /* Processor processor = new Processor();
         Executor executorSaySomething = () -> System.out.println("Test");
         processor.execute(executorSaySomething);
         processor.execute( () -> System.out.println("Test 2") );
@@ -43,7 +43,9 @@ public class StreamMain {
 
 
         System.out.println("Using Stream to generate even numbers from 1 to 20");
-        NumbersGenerator.generateEven(20);
+        NumbersGenerator.generateEven(20);*/
+
+
 
     }
 }

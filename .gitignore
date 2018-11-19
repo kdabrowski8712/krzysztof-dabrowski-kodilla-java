@@ -18,6 +18,8 @@ git co.gradle
 *.ipr
 /out/
 
+.gradle
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
