@@ -1,5 +1,7 @@
 package com.kodilla.stream;
 
+import com.kodilla.stream.beautifier.PoemBeautifier;
+import com.kodilla.stream.beautifier.PoemDecorator;
 import com.kodilla.stream.lambda.Executor;
 import com.kodilla.stream.lambda.ExpressionExecutor;
 import com.kodilla.stream.lambda.Processor;
@@ -29,6 +31,14 @@ public class StreamMain {
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::subBFromA);
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::divideAByB);
 
+        System.out.println("Poeam beautfier lambda excercies ");
+
+        PoemBeautifier beautifier= new PoemBeautifier();
+
+        System.out.println(beautifier.beautify("text1",(input -> "ABC" + input + "ABC")));
+        System.out.println(beautifier.beautify("text2",(input -> input.toUpperCase())));
+        System.out.println(beautifier.beautify("text3",(input -> input + "," + input + "," + input)));
+        System.out.println(beautifier.beautify("text2",(input) -> input.substring(0,1).toUpperCase() + " " + input));
 
 
     }

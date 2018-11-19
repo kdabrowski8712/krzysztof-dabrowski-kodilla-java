@@ -25,7 +25,12 @@ git co.gradle
 /nbdist/
 /.nb-gradle/
 
-###
+### kodilla-testing exclusions ###
 
 /kodilla-testing/out
 /kodilla-testing/build
+
+### kodilla-stream exclusions ###
+
+/kodilla-stream/out
+/kodilla-stream/build
