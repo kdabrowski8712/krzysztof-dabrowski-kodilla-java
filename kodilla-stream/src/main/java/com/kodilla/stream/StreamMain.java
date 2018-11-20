@@ -12,12 +12,17 @@ import com.kodilla.stream.lambda.ExpressionExecutor;
 import com.kodilla.stream.lambda.Processor;
 import com.kodilla.stream.person.People;
 import com.kodilla.stream.reference.FunctionalCalculator;
+import com.kodilla.stream.world.Continent;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class StreamMain {
     public static void main(String[] args) {
@@ -110,20 +115,39 @@ public class StreamMain {
         Forum myForum = new Forum();
 
 */
-        Forum myForum = new Forum();
+//        Forum myForum = new Forum();
+//
+//        Map<Integer, ForumUser> filteredUsers =  myForum.getUserList().stream()
+//                .filter(user -> user.getSex() == 'M')
+//                .filter(user -> (Period.between(user.getDateOfBirth(),LocalDate.now())).getYears() >=20 )
+//                .filter(user -> user.getPostNumber() >=1)
+//                .collect(Collectors.toMap(ForumUser::getId,user -> user));
+//
+//        System.out.println();
+//        System.out.println("# elements: " + filteredUsers.size());
+//        filteredUsers.entrySet().stream()
+//                .map(entry -> entry.getKey() + ": " + entry.getValue())
+//                .forEach(System.out::println);
+//
+//        Continent test = new Continent("Europe");
+//        test.addCountry(new BigDecimal("1000000"),"test");
+//
+//        test.getCountries().stream()
+//                .forEach(System.out::println);
 
-        Map<Integer, ForumUser> filteredUsers =  myForum.getUserList().stream()
-                .filter(user -> user.getSex() == 'M')
-                .filter(user -> (Period.between(user.getDateOfBirth(),LocalDate.now())).getYears() >=20 )
-                .filter(user -> user.getPostNumber() >=1)
-                .collect(Collectors.toMap(ForumUser::getId,user -> user));
 
-        System.out.println(); 
-        System.out.println("# elements: " + filteredUsers.size());
-        filteredUsers.entrySet().stream()
-                .map(entry -> entry.getKey() + ": " + entry.getValue())
-                .forEach(System.out::println);
+        List<Integer> testInt = Arrays.asList(24,1,113);
+
+        int max = IntStream.range(0,testInt.size())
+                .map(n -> testInt.get(n))
+                .max().getAsInt();
+
+        System.out.println(max);
+
+
+        }
+
 
 
     }
-}
+
