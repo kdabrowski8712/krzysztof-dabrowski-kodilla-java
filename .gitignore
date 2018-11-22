@@ -41,4 +41,4 @@ git co.gradle
 ### kodilla-rps exclusions ###
 
 /kodilla-rps/out
-/kodilla-rpsbuild
+/kodilla-rps/build
