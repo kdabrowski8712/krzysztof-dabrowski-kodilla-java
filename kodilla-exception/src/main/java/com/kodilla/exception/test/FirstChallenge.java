@@ -18,9 +18,17 @@ public class FirstChallenge {
 
         FirstChallenge firstChallenge = new FirstChallenge();
 
-        double result = firstChallenge.divide(3, 0);
 
-        System.out.println(result);
+        try {
+            double result = firstChallenge.divide(3, 0);
+            System.out.println(result);
+        }
+        catch(ArithmeticException e) {
+            System.out.println("Division by zero !!!");
+        }
+        finally {
+            System.out.println("After division operation");
+        }
 
     }
 }
