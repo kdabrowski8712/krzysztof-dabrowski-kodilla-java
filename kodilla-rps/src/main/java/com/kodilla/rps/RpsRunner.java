@@ -5,13 +5,13 @@ import java.util.Random;
 public class RpsRunner {
     public static void main(String[] args) {
         System.out.println("RPS Module");
-       //RpsGame game  = new RpsGame();
-        //game.start();
-       Random r = new Random();
-
-       for(int i=0; i<20; i++) {
-           System.out.print((r.nextInt(3)+1)+ " ") ;
-       }
+       RpsGame game  = new RpsGame();
+        game.start();
+//       Random r = new Random();
+//
+//       for(int i=0; i<20; i++) {
+//           System.out.print((r.nextInt(3)+1)+ " ") ;
+//       }
 
     //    Character c = '3';
   //      Integer val = 1;
