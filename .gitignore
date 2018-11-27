@@ -42,3 +42,8 @@ git co.gradle
 
 /kodilla-rps/out
 /kodilla-rps/build
+
+### kodilla-exception exclusions ###
+
+/kodilla-exception/out
+/kodilla-exception/build
