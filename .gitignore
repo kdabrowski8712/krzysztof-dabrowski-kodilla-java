@@ -47,3 +47,8 @@ git co.gradle
 
 /kodilla-exception/out
 /kodilla-exception/build
+
+### kodilla-good-patterns exclusions ###
+
+/kodilla-good-patterns/out
+/kodilla-good-patterns/build
