@@ -52,3 +52,13 @@ git co.gradle
 
 /kodilla-good-patterns/out
 /kodilla-good-patterns/build
+
+### kodilla-spring-intro exclusions ###
+
+/kodilla-spring-intro/out
+/kodilla-spring-intro/build
+
+### kodilla-spring exclusions ###
+
+/kodilla-spring/out
+/kodilla-spring/build
