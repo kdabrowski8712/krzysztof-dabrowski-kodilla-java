@@ -67,3 +67,8 @@ git co.gradle
 
 /kodilla-spring-web/out
 /kodilla-spring-web/build
+
+### kodilla-patterns exclusions ###
+
+/kodilla-patterns/out
+/kodilla-patterns/build
