@@ -8,7 +8,8 @@ public class LoggerTestSuite {
     @Test
     public void testGetLastLog() {
 
-        //Given      Logger.getInstance().log("test entry 1");
+        //Given
+        Logger.getInstance().log("test entry 1");
 
         //When
         String lastLog = Logger.getInstance().getLastLog();
