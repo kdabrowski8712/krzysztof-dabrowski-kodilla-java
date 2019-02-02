@@ -72,3 +72,8 @@ git co.gradle
 
 /kodilla-patterns/out
 /kodilla-patterns/build
+
+### kodilla-jdbc exlusions ###
+/kodilla-jdbc/out
+/kodilla-jdbc/build
+
