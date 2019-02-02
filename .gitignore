@@ -77,3 +77,6 @@ git co.gradle
 /kodilla-jdbc/out
 /kodilla-jdbc/build
 
+### kodilla-hibernate exlusions ###
+/kodilla-hibernate/out
+/kodilla-hibernate/build
