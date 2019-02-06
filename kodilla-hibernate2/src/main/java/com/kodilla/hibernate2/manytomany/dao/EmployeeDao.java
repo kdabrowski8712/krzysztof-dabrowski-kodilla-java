@@ -1,6 +1,6 @@
 package com.kodilla.hibernate2.manytomany.dao;
 
-import com.kodilla.hibernate2.manytomany.Company;
+import com.kodilla.hibernate2.manytomany.Employee;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
@@ -11,8 +11,8 @@ import java.util.List;
 
 @Transactional
 @Repository
-public interface CompanyDao extends CrudRepository<Company,Integer> {
+public interface EmployeeDao extends CrudRepository<Employee,Integer> {
 
     @Query
-    List<Company> fineByPartOfCompanyName(@Param("NAMEPART") String namePart);
+    List<Employee> findEmployeeByName(@Param("NAME") String lastName);
 }

@@ -5,6 +5,13 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedNativeQuery(
+        name = "Company.fineByPartOfCompanyName",
+        query = "SELECT * FROM companies " +
+                "WHERE locate(:NAMEPART,company_name)>0",
+        resultClass = Company.class
+)
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
