@@ -5,10 +5,17 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+//@NamedNativeQuery(
+//        name = "Company.fineByPartOfCompanyName",
+//        query = "SELECT * FROM companies " +
+//                "WHERE locate(:NAMEPART,company_name)>0",
+//        resultClass = Company.class
+//)
+
 @NamedNativeQuery(
-        name = "Company.fineByPartOfCompanyName",
+        name = "Company.fineByPartOfCompanyNameLike",
         query = "SELECT * FROM companies " +
-                "WHERE locate(:NAMEPART,company_name)>0",
+                "WHERE company_name LIKE concat(\"%\", :NAMEPART, \"%\")",
         resultClass = Company.class
 )
 

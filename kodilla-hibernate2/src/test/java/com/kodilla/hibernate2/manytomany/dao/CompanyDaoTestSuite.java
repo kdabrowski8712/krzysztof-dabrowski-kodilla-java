@@ -93,8 +93,8 @@ public class CompanyDaoTestSuite {
     public void testFindCompanyByPartName() {
 
         //Given
-        String RESTAURANT_NAME = "KFC RESTAURANT";
-          Company newCompany = new Company(RESTAURANT_NAME);
+        String RESTAURANT_NAME = "MY ABC RESTAURANT";
+        Company newCompany = new Company(RESTAURANT_NAME);
 
         Employee newEmployee = new Employee("Kazik","ZBogdanca");
 
@@ -107,7 +107,7 @@ public class CompanyDaoTestSuite {
         companyDao.save(newCompany);
         int companyID = newCompany.getId();
 
-        List<Company> resultSet = companyDao.fineByPartOfCompanyName("KFC");
+        List<Company> resultSet = companyDao.fineByPartOfCompanyNameLike("ABC");
 
         //Then
         Assert.assertEquals(1,resultSet.size());
