@@ -34,6 +34,6 @@ public class TaskListTestSuite {
 
         //Then
         Assert.assertEquals(2,m1.getUpdateCount());
-        Assert.assertEquals(1,zbyszekZak.getUpdateCount()gi);
+        Assert.assertEquals(1,zbyszekZak.getUpdateCount());
     }
 }
